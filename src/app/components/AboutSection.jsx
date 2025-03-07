@@ -10,22 +10,20 @@ const TAB_DATA = [
     content: (
       <ul className='list-disc pl-2'>
         <ul className="bg-gray-900 text-white p-6 rounded-lg shadow-md max-w-xl">
+          <li>Swift</li>
+          <li>Firebase</li>
+          <li>Git</li>
+          <li>Github</li>
           <li>Node.js</li>
           <li>React</li>
           <li>JavaScript</li>
-          <li>HTML</li>
-          <li>CSS</li>
+          <li>HTML,CSS</li>
+          <li>PHP</li>
           <li>Tailwind CSS</li>
           <li>Next.js</li>
-          <li>Redux</li>
-          <li>Redux Thunk</li>
-          <li>Redux Saga</li>
-          <li>React Testing Library</li>
-          <li>Jest</li>
-          <li>Enzyme</li>
-          <li>Storybook</li>
-          <li>GraphQL</li>
-          <li>AWS Lambda</li>
+          <li>Java</li>
+          <li> C++</li>
+          <li>typescript</li>
         </ul>
       </ul>
     )
