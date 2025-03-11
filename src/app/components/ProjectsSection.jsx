@@ -55,7 +55,7 @@ const projectsData = [
     title: "Weightswap",
     description: "WeightSwap is a PHP-powered web app for seamless weight-based transactions, featuring user authentication and payment processing. Hosted on Vercel, it offers a user-friendly experience and welcomes community contributions.",
     image: "/images/projects/6.png",
-    tag: ["All", "Mobile"],
+    tag: ["All", "Web"],
     gitUrl: "https://github.com/aditya072690/weightswap",
     previewUrl: "/",
   },
