@@ -7,74 +7,69 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
+    title: "Geeta Olympiad 2025",
+    description: "A high-performance production React Native application built from scratch. Features secure authentication, user onboarding, interactive quiz modules, real-time leaderboards, push notifications, and Firebase services integration (analytics, crash reporting).",
+    image: "/images/projects/geeta-olympiad.png",
+    tag: ["All", "Mobile"],
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.learngeeta.play&hl=en_IN",
+    appStoreUrl: "https://apps.apple.com/nz/app/geeta-olympiad-2025/id6756177418",
+    gitUrl: "",
+    previewUrl: "",
+  },
+  {
+    id: 2,
+    title: "OKO Homes",
+    description: "A scalable multi-tenant SaaS platform built using React, TypeScript, PostgreSQL, and Supabase. Implements secure role-based access control, interactive dashboards, real-time data sync, and optimized backend query tuning.",
+    image: "/images/projects/oko-homes.png",
+    tag: ["All", "Web"],
+    gitUrl: "",
+    previewUrl: "https://oko-homes-01.vercel.app",
+  },
+  {
+    id: 3,
+    title: "VizSpace",
+    description: "A full-stack business management and data visualization platform built with Next.js. Features backend APIs, secure authentication, and a responsive dashboard UI optimized for desktop and mobile devices.",
+    image: "/images/projects/vizspace.png",
+    tag: ["All", "Web"],
+    gitUrl: "",
+    previewUrl: "https://www.vizspace.in",
+  },
+  {
+    id: 4,
+    title: "Learn Geeta",
+    description: "A production React Native mobile app for studying the Bhagavad Gita. Implements OTP authentication, Firebase integration, local storage, real-time progress tracking, and push notifications.",
+    image: "/images/projects/learn-geeta.png",
+    tag: ["All", "Mobile"],
+    playStoreUrl: "https://play.google.com/store/apps/details?id=com.loginwithgoogle&hl=en_IN",
+    appStoreUrl: "https://apps.apple.com/nz/app/learn-geeta/id6447505100",
+    gitUrl: "",
+    previewUrl: "",
+  },
+  {
+    id: 5,
+    title: "Atmos Farms",
+    description: "A responsive Next.js website for Atmos Farms. Built custom interactive content sections, navigation systems, and optimized loading speeds for mobile responsiveness.",
+    image: "/images/projects/atmos-farms.png",
+    tag: ["All", "Web"],
+    gitUrl: "",
+    previewUrl: "https://atomas-farm.vercel.app",
+  },
+  {
+    id: 6,
+    title: "ChatNest",
+    description: "A real-time messaging application featuring group chat workspaces, media file sharing, custom profile setups, read receipts, and privacy settings. Developed with a responsive user interface.",
+    image: "/images/projects/chatnest.png",
+    tag: ["All", "Web"],
+    gitUrl: "",
+    previewUrl: "",
+  },
+  {
+    id: 7,
     title: "Flowind",
     description: "Flowind is a SwiftUI productivity app with seamless onboarding, animated UI, and Firebase-powered authentication. Open-source and developer-friendly, it enhances workflow efficiency with a smooth user experience.",
     image: "/images/projects/1.png",
     tag: ["All", "Mobile"],
     gitUrl: "https://github.com/aditya072690/Flowind",
-    previewUrl: "/",
-  },
-  {
-    id: 2,
-    title: "Quizzler",
-    description: "Quizzler is a fun and interactive SwiftUI trivia app with customizable questions, progress tracking, and smooth animations. Designed with the MVC pattern, it keeps data organized for a seamless user experience.",
-    image: "/images/projects/2.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/aditya072690/Quizzler",
-    previewUrl: "/",
-  },
-  {
-    id: 3,
-    title: "BMI-Calculator",
-    description: "The BMI Calculator is a sleek SwiftUI app with animated navigation and smart data handling for accurate health tracking. Built for a smooth user experience, it leverages Swift’s best practices for efficiency and clarity.",
-    image: "/images/projects/3.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/aditya072690/BMI-Calculator",
-    previewUrl: "/",
-  },
-  {
-    id: 4,
-    title: "ScoreKeeper",
-    description: "ScoreKeeper is a user-friendly Python app with a sleek GUI for tracking game scores effortlessly. Open-source and community-driven, it ensures easy score management with database support.",
-    image: "/images/projects/4.png",
-    tag: ["All", "PC"],
-    gitUrl: "https://github.com/aditya072690/ScoreKeeper",
-    previewUrl: "/",
-  },
-  {
-    id: 5,
-    title: "Treeheaven",
-    description: "TreeHeaven is a sleek, web-based online store built with HTML, CSS, SCSS, and JavaScript for a smooth shopping experience. Hosted on Vercel and open-source, it invites community contributions to enhance its features.",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/aditya072690/treeheaven1",
-    previewUrl: "treeheaven.vercel.app",
-  },
-  {
-    id: 6,
-    title: "Weightswap",
-    description: "WeightSwap is a PHP-powered web app for seamless weight-based transactions, featuring user authentication and payment processing. Hosted on Vercel, it offers a user-friendly experience and welcomes community contributions.",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "https://github.com/aditya072690/weightswap",
-    previewUrl: "/",
-  },
-  {
-    id: 7,
-    title: "Clima",
-    description: "Clima A weather forecasting application that provides current and forecasted weather conditions, including temperature, humidity, wind speed, and precipitation. The app uses APIs to gather data and offers insights into local climate patterns for better planning.",
-    image: "/images/projects/7.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/aditya072690/Clima",
-    previewUrl: "/",
-  },
-  {
-    id: 8,
-    title: "Flash Chat",
-    description: "Flash Chat A simple yet efficient chat application built with Swift and Firebase. It allows users to connect, send messages, and view real-time updates. The app provides a basic UI for easy communication.",
-    image: "/images/projects/8.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "https://github.com/aditya072690/Flash-Chat",
     previewUrl: "/",
   },
 ];
@@ -118,11 +113,6 @@ const ProjectsSection = () => {
           name="Mobile"
           isSelected={tag === "Mobile"}
         />
-        <ProjectTag
-          onClick={handleTagChange}
-          name="PC"
-          isSelected={tag === "PC"}
-        />
       </div>
       <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
         {filteredProjects.map((project, index) => (
@@ -140,6 +130,8 @@ const ProjectsSection = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              playStoreUrl={project.playStoreUrl}
+              appStoreUrl={project.appStoreUrl}
             />
           </motion.li>
         ))}
