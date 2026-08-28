@@ -53,7 +53,7 @@ const HeroSection = () => {
               Contact
             </Link>
             <Link
-              href="/Aditya Chauhan - Full Stack Developer.pdf" target="_blank"
+              href="/Aditya%20Chauhan%20-%20Full%20Stack%20Developer.pdf" target="_blank"
               className="px-1 inline-block py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-500 via-secondary-500 to-tertiary-500 hover:bg-slate-800 text-white mt-3"
             >
               <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
