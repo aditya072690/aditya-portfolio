@@ -22,14 +22,15 @@ const HeroSection = () => {
             <br></br>
             <TypeAnimation
               sequence={[
-                // Same substring at the start will only be typed out once, initially
                 'Aditya Chauhan',
-                1000, // wait 1s before replacing "Mice" with "Hamsters"
+                1000,
                 'Full Stack Developer',
+                1000,
+                'Django & Python Developer',
                 1000,
                 'React & Next.js Developer',
                 1000,
-                'React Native Developer',
+                'Backend API Engineer',
                 1000,
                 'Building Scalable SaaS Products',
                 1000,
@@ -43,7 +44,7 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Building Scalable Web, Mobile & SaaS Applications with Modern Technologies
+            Building Scalable Web, Mobile & SaaS Applications with Django, React, Next.js & Cloud Technologies
           </p>
           <div>
             <Link
